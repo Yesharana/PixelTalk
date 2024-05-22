@@ -1,0 +1,9 @@
+export default function UnderlineInput({name,setName}) {
+  return (
+    <div className="mt-4">
+        <input type="text" placeholder="Group Name" value={name} onChange={(e)=>setName(e.target.value)}
+        className="w-full bg-transparent border-b border-green_3 dark:text-dark_text_1 outline-none pl-1"
+        />
+    </div>
+  )
+}
